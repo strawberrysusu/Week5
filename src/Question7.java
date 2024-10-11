@@ -2,15 +2,13 @@ import java.util.Scanner;
 
 public class Question7 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("숫자를 입력하세요: ");
-        int number = scanner.nextInt();
-
-        int factorial = 1;
-        for (int i = 1; i <= number; i++) {
-            factorial *= i;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("숫자를 입력해주세요: ");
+        int n = sc.nextInt();
+        int result = 1;
+        for (int i=1; i <= n; i++){
+            result *= i;
         }
-
-        System.out.println("팩토리얼: " + factorial);
+        System.out.println(result);
     }
 }
